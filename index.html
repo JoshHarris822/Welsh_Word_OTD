@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="cy">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geiriau - Welsh Word of the Day</title>
+
+  <!-- PWA & Mobile Meta Tags -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#008751">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Geiriau">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <header>
+      <h1>Gair y Dydd</h1>
+      <p class="subtitle">Welsh Word of the Day</p>
+    </header>
+
+    <!-- Word Display Card -->
+    <section class="card" aria-live="polite">
+      <div class="badge" id="word-category">Noun</div>
+      <h2 class="welsh-word" id="welsh-word">Hiraeth</h2>
+      <p class="phonetic" id="phonetic">/ˈhɪraɪθ/</p>
+      <p class="meaning" id="english-meaning">A homesickness or deep longing for a home, place, or time you cannot return to.</p>
+      <p class="example" id="example-sentence"><em>"Mae hiraeth arna i am Gymru."</em> (I feel a longing for Wales.)</p>
+    </section>
+
+    <!-- Lock Screen Notification Action -->
+    <section class="controls">
+      <button id="notify-btn" class="primary-btn">
+        <span>🔔</span> Get Words on Lock Screen
+      </button>
+      <p class="status-msg" id="status-msg"></p>
+    </section>
+  </main>
+
+  <!-- Application Logic & Service Worker Registration -->
+  <script src="app.js"></script>
+</body>
+</html>
