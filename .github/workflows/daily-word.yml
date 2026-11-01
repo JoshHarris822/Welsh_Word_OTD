@@ -1,0 +1,30 @@
+name: Send 9AM Daily Welsh Word
+
+on:
+  schedule:
+    # 09:00 UTC every day
+    - cron: '0 9 * * *'
+  # Allows triggering manually from the GitHub website to test anytime
+  workflow_dispatch:
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install web-push
+
+      - name: Run sender script
+        env:
+          VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+        run: node send-push.js
