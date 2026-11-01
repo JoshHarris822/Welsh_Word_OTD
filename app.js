@@ -1,7 +1,6 @@
 // DOM Element References
 const categoryEl = document.getElementById("word-category");
 const welshWordEl = document.getElementById("welsh-word");
-const phoneticEl = document.getElementById("phonetic");
 const meaningEl = document.getElementById("english-meaning");
 const exampleEl = document.getElementById("example-sentence");
 const notifyBtn = document.getElementById("notify-btn");
@@ -13,7 +12,6 @@ function renderDailyWord() {
 
   categoryEl.textContent = currentWord.category;
   welshWordEl.textContent = currentWord.word;
-  phoneticEl.textContent = currentWord.phonetic;
   meaningEl.textContent = currentWord.meaning;
   exampleEl.innerHTML = `<em>"${currentWord.exampleWelsh}"</em> (${currentWord.exampleEnglish})`;
 }

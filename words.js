@@ -2,7 +2,6 @@ const welshWords = [
   {
     word: "Hiraeth",
     category: "Noun",
-    phonetic: "/ˈhɪraɪθ/",
     meaning: "A deep homesickness or longing for a place, person, or time that cannot be revisited.",
     exampleWelsh: "Mae hiraeth arna i am Gymru.",
     exampleEnglish: "I feel a deep longing for Wales."
@@ -10,7 +9,6 @@ const welshWords = [
   {
     word: "Cwtch",
     category: "Noun / Verb",
-    phonetic: "/kʊtʃ/",
     meaning: "An affectionate hug, cuddle, or a safe place where you feel protected.",
     exampleWelsh: "Rhowch gwtch i mi cyn mynd.",
     exampleEnglish: "Give me a cwtch before you go."
@@ -18,7 +16,6 @@ const welshWords = [
   {
     word: "Bore da",
     category: "Greeting",
-    phonetic: "/ˈbɔrɛ daː/",
     meaning: "Good morning.",
     exampleWelsh: "Bore da, sut wyt ti heddiw?",
     exampleEnglish: "Good morning, how are you today?"
@@ -26,7 +23,6 @@ const welshWords = [
   {
     word: "Gweddol",
     category: "Adjective",
-    phonetic: "/ˈɡwɛðɔl/",
     meaning: "Fair, middling, reasonable, or so-so.",
     exampleWelsh: "Mae'r tywydd yn weddol braf.",
     exampleEnglish: "The weather is reasonably fine."
@@ -34,7 +30,6 @@ const welshWords = [
   {
     word: "Bendigedig",
     category: "Adjective",
-    phonetic: "/bɛndɪˈɡɛdɪɡ/",
     meaning: "Fantastic, wonderful, or blessed.",
     exampleWelsh: "Roedd y bwyd yn fendigedig.",
     exampleEnglish: "The food was wonderful."
@@ -42,7 +37,6 @@ const welshWords = [
   {
     word: "Diolch yn fawr",
     category: "Phrase",
-    phonetic: "/ˈdjɔlx ən vaʊr/",
     meaning: "Thank you very much.",
     exampleWelsh: "Diolch yn fawr iawn am dy help.",
     exampleEnglish: "Thank you very much for your help."
@@ -50,7 +44,6 @@ const welshWords = [
   {
     word: "Prynhawn da",
     category: "Greeting",
-    phonetic: "/prənˈhaʊn daː/",
     meaning: "Good afternoon.",
     exampleWelsh: "Prynhawn da i chi i gyd.",
     exampleEnglish: "Good afternoon to you all."
@@ -58,7 +51,6 @@ const welshWords = [
   {
     word: "Cynefin",
     category: "Noun",
-    phonetic: "/kəˈnɛvɪn/",
     meaning: "A habitat or place where a person feels they naturally belong; spiritual ground.",
     exampleWelsh: "Mae'r arfordir hwn yn gynefin i mi.",
     exampleEnglish: "This coastline is a place of belonging for me."
@@ -66,7 +58,6 @@ const welshWords = [
   {
     word: "Heddwch",
     category: "Noun",
-    phonetic: "/ˈhɛðwʊx/",
     meaning: "Peace, tranquility, or quietude.",
     exampleWelsh: "Mwynhewch yr heddwch a'r tawelwch.",
     exampleEnglish: "Enjoy the peace and quiet."
@@ -74,7 +65,6 @@ const welshWords = [
   {
     word: "Nos da",
     category: "Phrase",
-    phonetic: "/noːs daː/",
     meaning: "Good night.",
     exampleWelsh: "Nos da, cysgwch yn dda.",
     exampleEnglish: "Good night, sleep well."
