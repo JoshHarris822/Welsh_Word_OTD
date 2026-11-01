@@ -55,6 +55,14 @@ async function handleNotificationRequest() {
       statusMsg.textContent = "Enabled! Lock screen words will arrive on schedule.";
       notifyBtn.disabled = true;
       notifyBtn.style.opacity = "0.7";
+
+      // Trigger an immediate test notification to verify lock screen rendering
+      const reg = await navigator.serviceWorker.ready;
+      reg.showNotification("Gair y Dydd: Prawf Llwyddiannus!", {
+        body: "Croeso! Mae hysbysiadau sgrin glo yn gweithio. (Welcome! Lock screen notifications are working.)",
+        icon: "/icons/icon-192.png",
+        badge: "/icons/icon-192.png"
+      });
     } else {
       statusMsg.textContent = "Notification permission was declined.";
     }
